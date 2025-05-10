@@ -1,10 +1,13 @@
-import HeroSection from "./section/HeroSection";
-
+import ServicesSection from "./components/ServiceSection";
+import HeroSection from "./components/HeroSection";
+import FeaturedSection from "./components/FeaturedSection";
 
 export default function Home() {
   return (
     <>
-    <HeroSection/>
+      <HeroSection />
+      <FeaturedSection />
+      <ServicesSection />
     </>
   );
 }
