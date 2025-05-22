@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class Home extends Component
 {
-    #[Title('Beranda')]
+    #[Title('Welcome to ODS | Indonesian Website Development & Digital Branding Expert')]
 
     public function render()
     {

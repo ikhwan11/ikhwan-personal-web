@@ -7,48 +7,36 @@
                     <div>
                         <span class="relative inline-block dark:hidden">
                             <img src="/assets/img/brushes/process/1.png" class="md:max-w-[125px] max-w-[90px] mx-auto" alt="" />
-                            <img src="/assets/img/svg/process/target.svg" class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
-                        </span>
-                        <span class="relative hidden dark:block">
-                            <img src="/assets/img/brushes/process/dark/1.png" class="md:max-w-[125px] max-w-[90px] mx-auto" alt="" />
-                            <img src="/assets/img/svg/process/target-2.svg" class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
+                            <img src="/assets/img/svg/process/Custom.svg" class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
                         </span>
                     </div>
                     <div class="mt-[30px]">
-                        <h3 class="text-2xl">Pixel Perfect</h3>
-                        <p class="mx-auto text-muted dark:text-darkmuted mt-5 leading-[30px]">Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+                        <h3 class="text-2xl">Custom Build</h3>
+                        <p class="mx-auto text-muted dark:text-darkmuted mt-5 leading-[30px]">I build fast, scalable websites tailored to your business needs using Laravel+Livewire, Laravel Rest API, React.js + vite, Tailwind CSS, and Bootstrap.</p>
                     </div>
                 </div>
                 <div class="text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
                     <div>
                         <span class="relative inline-block dark:hidden">
                             <img src="/assets/img/brushes/process/2.png" class="md:max-w-[125px] max-w-[90px] mx-auto" alt="" />
-                            <img src="/assets/img/svg/process/brush.svg" class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
-                        </span>
-                        <span class="relative hidden dark:block">
-                            <img src="/assets/img/brushes/process/dark/2.png" class="md:max-w-[125px] max-w-[90px] mx-auto" alt="" />
-                            <img src="/assets/img/svg/process/brush-2.svg" class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
+                            <img src="/assets/img/svg/process/Focus.svg" class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
                         </span>
                     </div>
                     <div class="mt-[30px]">
-                        <h3 class="text-2xl">High Quality</h3>
-                        <p class="mx-auto text-muted dark:text-darkmuted mt-5 leading-[30px]">Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+                        <h3 class="text-2xl">Brand Focus</h3>
+                        <p class="mx-auto text-muted dark:text-darkmuted mt-5 leading-[30px]">Strong, consistent visual identities with logos, packaging, and marketing assets designed to grow your brand.</p>
                     </div>
                 </div>
                 <div class="text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div>
                         <span class="relative inline-block dark:hidden">
                             <img src="/assets/img/brushes/process/3.png" class="md:max-w-[125px] max-w-[90px] mx-auto" alt="" />
-                            <img src="/assets/img/svg/process/energy.svg" class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
-                        </span>
-                        <span class="relative hidden dark:block">
-                            <img src="/assets/img/brushes/process/dark/3.png" class="md:max-w-[125px] max-w-[90px] mx-auto" alt="" />
-                            <img src="/assets/img/svg/process/energy-2.svg" class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
+                            <img src="/assets/img/svg/process/Growth.svg" class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
                         </span>
                     </div>
                     <div class="mt-[30px]">
-                        <h3 class="text-2xl">Awesome Idea</h3>
-                        <p class="mx-auto text-muted dark:text-darkmuted mt-5 leading-[30px]">Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+                        <h3 class="text-2xl">Online Growth</h3>
+                        <p class="mx-auto text-muted dark:text-darkmuted mt-5 leading-[30px]">Helping businesses stand out online with responsive design, SEO-friendly code, and user-focused strategy.</p>
                     </div>
                 </div>
             </div>

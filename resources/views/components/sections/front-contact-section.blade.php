@@ -6,7 +6,7 @@
                 <div class="text-center max-w-[680px] mx-auto">
                     <p class="text-custom text-[20px] md:text-2xl font-medium font-secondary">Contact Me</p>
                     <h3 class="md:text-[48px] text-[35px] leading-[1.25] mb-[23px] mt-1.5">I Want To Hear From You</h3>
-                    <p class="text-muted dark:text-darkmuted text-lg leading-[30px]">Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
+                    <p class="text-muted text-lg leading-[30px]">Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 mt-20 gap-[25px]">
@@ -17,7 +17,7 @@
                         </div>
                         <div>
                             <h5 class="md:text-[30px] text-[25px]">Address</h5>
-                            <p class="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">20, Somewhere in world</p>
+                            <p class="text-lg mt-1.5 text-muted leading-8">20, Somewhere in world</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-[25px]">
@@ -26,7 +26,7 @@
                         </div>
                         <div>
                             <h5 class="md:text-[30px] text-[25px]">Email</h5>
-                            <p class="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">hello@dizme.com</p>
+                            <p class="text-lg mt-1.5 text-muted leading-8">hello@dizme.com</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-[25px]">
@@ -35,7 +35,7 @@
                         </div>
                         <div>
                             <h5 class="md:text-[30px] text-[25px]">Phone</h5>
-                            <p class="text-lg mt-1.5 text-muted dark:text-darkmuted leading-8">+123 456 7890</p>
+                            <p class="text-lg mt-1.5 text-muted leading-8">+123 456 7890</p>
                         </div>
                     </div>
                 </div>

@@ -9,6 +9,8 @@
     <title>{{ $title ?? 'Digisol Indonesia' }}</title>
     @livewireStyles
 
+    <link rel="icon" href="/assets/img/logo/logo-ico.png" type="image/png" />
+
     <link rel="stylesheet" href="/assets/css/icon.css" />
     <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
     <link rel="stylesheet" href="/assets/css/animate.min.css" />
@@ -19,9 +21,9 @@
 
 <body class="antialiased text-lg leading-[30px] font-primary text-dark dark:bg-semidark dark:text-white">
 
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="loader_line"></div>
-    </div>
+    </div> -->
 
     <livewire:FrontHeader />
 
