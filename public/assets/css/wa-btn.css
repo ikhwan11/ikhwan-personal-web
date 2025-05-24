@@ -1,0 +1,48 @@
+/* Posisi tombol di kiri tengah */
+#waBtn {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #25d366; /* hijau WA */
+    color: white;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    padding: 12px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: left 0.4s ease, width 0.4s ease, padding 0.4s ease;
+    width: 50px; /* awal kecil */
+    overflow: hidden;
+    z-index: 10;
+}
+
+#waBtn.expanded {
+    left: -10px; /* geser ke kanan 100px */
+    width: 180px; /* lebarkan */
+    padding: 12px 20px;
+}
+
+#waBtn i {
+    font-size: 22px;
+}
+
+#waBtn span {
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Tampilkan tulisan saat tombol expanded */
+#waBtn.expanded span {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    #waBtn {
+        top: 40%;
+    }
+}

@@ -1,15 +1,15 @@
 <div>
     <!-- Start Home -->
-    <section class="bg-[url('../img/slider/1.jpg')] flex items-center dark:bg-[url('../img/slider/2.jpg')] bg-center bg-cover lg:h-screen py-24 relative dizme_tm_header" id="home">
+    <section class="bg-[url('../img/slider/1.jpg')] flex items-center bg-center bg-cover lg:h-screen py-24 relative dizme_tm_header" id="home">
         <div class="container">
             <div class="grid lg:grid-cols-2 items-center gap-[25px]">
                 <div class="order-2 lg:order-1">
                     <h3 class="text-custom text-[21px] text-center lg:text-left lg:text-[25px] xl:text-[45px] leading-[1.3] font-medium font-secondary">Hello, I'm</h3>
                     <h1 class="text-[42px] lg:text-[60px] xl:text-[85px] text-center lg:text-left mb-[11px] lg:mb-[18px] leading-[1.3] font-medium font-secondary">Ikhwan Sulestra</h1>
                     <p class="lg:mb-9 mb-[15px] text-lg lg:text-[19px] xl:text-[28px] text-center lg:text-left font-medium">
-                        A <span class="text-[#1cbe59]">Web Developer</span> & <span class="text-[#8067f0] dark:text-[#f0c45c]">Creative Designer</span>
+                        A <span class="text-[#1cbe59]">Web Developer</span> & <span class="text-[#8067f0]">Creative Designer</span>
                     </p>
-                    <p class="lg:mb-[42px] text-muted dark:text-white mb-[30px] text-base text-center lg:text-left xl:text-[23px] leading-[1.5] max-w-[640px] mx-auto lg:ml-0">
+                    <p class="lg:mb-[42px] text-muted mb-[30px] text-base text-center lg:text-left xl:text-[23px] leading-[1.5] max-w-[640px] mx-auto lg:ml-0">
                         I help businesses grow online by building fast, responsive websites and impactful brand designs. I build modern and functional websites using Laravel, Livewire, React, and Tailwind CSS. I also help brands stand out with unique logos, product packaging, and digital designs. Let's build something great together.
                     </p>
                     <div class="flex items-center justify-center lg:justify-start gap-[25px]">
@@ -56,12 +56,12 @@
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                     style="fill-rule: evenodd; clip-rule: evenodd; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5;">
-                    <path id="wheel" d="M123.359,79.775l0,72.843" fill="none" class="stroke-[20px] stroke-dark dark:stroke-white" />
+                    <path id="wheel" d="M123.359,79.775l0,72.843" fill="none" class="stroke-[20px] stroke-dark " />
                     <path
                         id="mouse"
                         fill="none"
                         d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
-                        class="stroke-[20px] stroke-dark dark:stroke-white" />
+                        class="stroke-[20px] stroke-dark " />
                 </svg>
             </a>
         </div>

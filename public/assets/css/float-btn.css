@@ -1,0 +1,146 @@
+/* Container utama fixed di pojok kanan bawah */
+.float-btn-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+/* Tombol utama */
+.float-btn {
+    background-color: #00d0be;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 10;
+}
+.float-btn:hover {
+    background-color: #007ce2;
+}
+
+/* Container tombol sosmed posisi absolute, muncul ke atas dari tombol utama */
+.social-menu {
+    position: absolute;
+    bottom: 70px; /* jarak di atas tombol utama */
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Tombol sosmed */
+.social-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    margin-bottom: 12px;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    animation-fill-mode: forwards;
+}
+
+/* Animasi naik + fade */
+@keyframes slideFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+}
+
+/* Ketika aktif, jalankan animasi per tombol dengan delay */
+.float-btn-container.active .social-btn:nth-child(1) {
+    animation: slideFadeUp 0.3s ease forwards;
+    animation-delay: 0.05s;
+}
+.float-btn-container.active .social-btn:nth-child(2) {
+    animation: slideFadeUp 0.3s ease forwards;
+    animation-delay: 0.15s;
+}
+.float-btn-container.active .social-btn:nth-child(3) {
+    animation: slideFadeUp 0.3s ease forwards;
+    animation-delay: 0.25s;
+}
+.float-btn-container.active .social-btn:nth-child(4) {
+    animation: slideFadeUp 0.3s ease forwards;
+    animation-delay: 0.35s;
+}
+.float-btn-container.active .social-btn:nth-child(5) {
+    animation: slideFadeUp 0.3s ease forwards;
+    animation-delay: 0.45s;
+}
+
+/* Reset jika tidak aktif */
+.float-btn-container:not(.active) .social-btn {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    animation: none;
+}
+
+.float-btn {
+    position: relative; /* buat posisi anak tooltip absolute */
+}
+
+/* Tooltip styling */
+.tooltip {
+    position: absolute;
+    bottom: 100%; /* di atas tombol */
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    user-select: none;
+    z-index: 20;
+}
+
+/* Panah kecil di bawah tooltip */
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
+}
+
+/* Munculkan tooltip saat hover tombol utama */
+.float-btn:hover .tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}

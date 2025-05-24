@@ -56,6 +56,9 @@
                 </div>
             </div>
         </div>
+        <div class="wow fadeInBottom flex justify-center mt-20" data-wow-duration="1s">
+            <a href="/Blog" class="btn-custom">More Blog</a>
+        </div>
         <div class="top-[250px] left-[115px] absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="/assets/img/brushes/news/1.png" alt="" /></div>
         <div class="top-0 right-0 absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="/assets/img/brushes/news/2.png" alt="" /></div>
     </section>

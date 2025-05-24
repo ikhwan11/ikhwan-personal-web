@@ -16,10 +16,18 @@
     <link rel="stylesheet" href="/assets/css/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/wa-btn.css" />
+    <link rel="stylesheet" href="/assets/css/float-btn.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
 
 </head>
 
-<body class="antialiased text-lg leading-[30px] font-primary text-dark dark:bg-semidark dark:text-white">
+<body class="antialiased text-lg leading-[30px] font-primary text-dark">
 
     <!-- <div id="preloader">
         <div class="loader_line"></div>
@@ -29,10 +37,13 @@
 
     {{ $slot }}
 
+    <livewire:WidgetSocmed />
     <livewire:FrontFooter />
 
     <div class="mouse-cursor cursor-outer"></div>
     <div class="mouse-cursor cursor-inner"></div>
+
+    <livewire:WidgetWa />
 
     <script src="/assets/js/jquery-3.6.2.min.js"></script>
     <script src="/assets/js/isotope.js"></script>

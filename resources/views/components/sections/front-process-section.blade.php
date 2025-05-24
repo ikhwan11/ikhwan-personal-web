@@ -7,7 +7,7 @@
                     <div>
                         <span class="relative inline-block dark:hidden">
                             <img src="/assets/img/brushes/process/1.png" class="md:max-w-[125px] max-w-[90px] mx-auto" alt="" />
-                            <img src="/assets/img/svg/process/Custom.svg" class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
+                            <img src="/assets/img/svg/process/Custom.svg" class="top-6 -translate-y-6 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
                         </span>
                     </div>
                     <div class="mt-[30px]">
@@ -19,7 +19,7 @@
                     <div>
                         <span class="relative inline-block dark:hidden">
                             <img src="/assets/img/brushes/process/2.png" class="md:max-w-[125px] max-w-[90px] mx-auto" alt="" />
-                            <img src="/assets/img/svg/process/Focus.svg" class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
+                            <img src="/assets/img/svg/process/Focus.svg" class="top-6 -translate-y-6 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
                         </span>
                     </div>
                     <div class="mt-[30px]">
@@ -31,7 +31,7 @@
                     <div>
                         <span class="relative inline-block dark:hidden">
                             <img src="/assets/img/brushes/process/3.png" class="md:max-w-[125px] max-w-[90px] mx-auto" alt="" />
-                            <img src="/assets/img/svg/process/Growth.svg" class="top-1/2 -translate-y-1/2 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
+                            <img src="/assets/img/svg/process/Growth.svg" class="top-6 -translate-y-6 absolute inset-x-0 w-[45px] md:w-[60px] h-[45px] md:h-[60px] mx-auto" alt="" />
                         </span>
                     </div>
                     <div class="mt-[30px]">

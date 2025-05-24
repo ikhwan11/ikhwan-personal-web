@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /*
 ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
@@ -888,16 +888,47 @@ h6 {
     height: 0px;
 }
 
-.dark .btn-custom {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 @media (min-width: 768px) {
     .btn-custom {
         padding-left: 48px;
         padding-right: 48px;
     }
+}
+
+.btn-custom-sm {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 0.5rem; /* Lebih kecil daripada 9999px */
+    border-width: 2px;
+    border-color: #00d0be; /* warna tosca */
+    padding: 6px 16px; /* lebih kecil dari btn-custom */
+    font-family: Jost, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem; /* text-sm */
+    color: #ffffff;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-custom-sm::before {
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -10;
+    height: 112%;
+    background-color: #00d0be;
+    content: "";
+    transition: height 300ms;
+}
+
+.btn-custom-sm:hover {
+    color: #000000;
+}
+
+.btn-custom-sm:hover::before {
+    height: 0px;
 }
 
 .btn-outline-custom {
@@ -935,11 +966,6 @@ h6 {
     height: 112%;
 }
 
-.dark .btn-outline-custom {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .form-input {
     height: 58px;
     width: 100%;
@@ -957,24 +983,6 @@ h6 {
 
 .form-input:focus {
     --tw-ring-color: transperent;
-}
-
-.dark .form-input {
-    border-color: rgb(214 219 229 / 0.3) !important;
-    --tw-bg-opacity: 1;
-    background-color: rgb(43 45 51 / var(--tw-bg-opacity));
-    --tw-text-opacity: 1;
-    color: rgb(185 181 201 / var(--tw-text-opacity));
-}
-
-.dark .form-input::-moz-placeholder {
-    --tw-text-opacity: 1;
-    color: rgb(185 181 201 / var(--tw-text-opacity));
-}
-
-.dark .form-input::placeholder {
-    --tw-text-opacity: 1;
-    color: rgb(185 181 201 / var(--tw-text-opacity));
 }
 
 .fixed {
@@ -1813,11 +1821,11 @@ h6 {
 }
 
 .font-primary {
-    font-family: Open Sans, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .font-secondary {
-    font-family: Jost, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .text-lg {
@@ -2050,11 +2058,6 @@ h6 {
         var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.dark .mobile-nav.stickyadd {
-    --tw-bg-opacity: 1;
-    background-color: rgb(43 45 51 / var(--tw-bg-opacity));
-}
-
 .mobile-nav ul li.active {
     --tw-text-opacity: 1;
     color: rgb(247 80 35 / var(--tw-text-opacity));
@@ -2135,13 +2138,6 @@ h6 {
     outline-offset: 2px;
 }
 
-.dark .custom-mail {
-    --tw-bg-opacity: 1 !important;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
-    --tw-text-opacity: 1;
-    color: rgb(111 107 128 / var(--tw-text-opacity));
-}
-
 .sub-btn {
     position: absolute;
     right: 0px;
@@ -2176,11 +2172,6 @@ h6 {
     border-width: 4px;
     --tw-border-opacity: 1;
     border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.dark .owl-dots button.owl-dot span {
-    --tw-border-opacity: 1;
-    border-color: rgb(43 45 51 / var(--tw-border-opacity));
 }
 
 .owl-dots button.owl-dot span {
@@ -2497,61 +2488,6 @@ h6 {
         scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.dark .dark\:block {
-    display: block;
-}
-
-.dark .dark\:hidden {
-    display: none;
-}
-
-.dark .dark\:border-\[\#555\] {
-    --tw-border-opacity: 1;
-    border-color: rgb(85 85 85 / var(--tw-border-opacity));
-}
-
-.dark .dark\:bg-semidark {
-    --tw-bg-opacity: 1;
-    background-color: rgb(43 45 51 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-semilight {
-    --tw-bg-opacity: 1;
-    background-color: rgb(75 79 92 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-\[\#3f4453\] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(63 68 83 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-\[url\(\'\.\.\/img\/slider\/2\.jpg\'\)\] {
-    background-image: url("../img/slider/2.jpg");
-}
-
-.dark .dark\:bg-\[url\(\'\.\.\/img\/testimonials\/bg-client-dark\.png\'\)\] {
-    background-image: url("../img/testimonials/bg-client-dark.png");
-}
-
-.dark .dark\:stroke-white {
-    stroke: #ffffff;
-}
-
-.dark .dark\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.dark .dark\:text-\[\#f0c45c\] {
-    --tw-text-opacity: 1;
-    color: rgb(240 196 92 / var(--tw-text-opacity));
-}
-
-.dark .dark\:text-darkmuted {
-    --tw-text-opacity: 1;
-    color: rgb(185 181 201 / var(--tw-text-opacity));
-}
-
 @media (max-width: 1024px) {
     .max-\[1024px\]\:\!bottom-6 {
         bottom: 1.5rem !important;
@@ -2574,16 +2510,6 @@ h6 {
         --tw-shadow-colored: 0px 0px 10px var(--tw-shadow-color);
         box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
             var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    }
-
-    .dark .max-\[768px\]\:dark\:bg-semidark {
-        --tw-bg-opacity: 1;
-        background-color: rgb(43 45 51 / var(--tw-bg-opacity));
-    }
-
-    .dark .max-\[768px\]\:dark\:py-\[20px\] {
-        padding-top: 20px;
-        padding-bottom: 20px;
     }
 }
 
