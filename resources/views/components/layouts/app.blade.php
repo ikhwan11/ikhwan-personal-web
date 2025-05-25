@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     @vite('resources/css/app.css')
-    <title>{{ $title ?? 'Digisol Indonesia' }}</title>
+    <title>{{ $title ?? 'ODS Indonesia' }}</title>
     @livewireStyles
 
     <link rel="icon" href="/assets/img/logo/logo-ico.png" type="image/png" />
@@ -18,32 +18,30 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/wa-btn.css" />
     <link rel="stylesheet" href="/assets/css/float-btn.css" />
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 
 </head>
 
-<body class="antialiased text-lg leading-[30px] font-primary text-dark">
+<body class="antialiased text-base leading-relaxed font-primary text-dark">
 
     <!-- <div id="preloader">
         <div class="loader_line"></div>
     </div> -->
 
+    @if (!Str::contains(Request::path(), 'Admin'))
     <livewire:FrontHeader />
+    <livewire:WidgetSocmed />
+    <livewire:WidgetWa />
+    @endif
 
     {{ $slot }}
 
-    <livewire:WidgetSocmed />
+
     <livewire:FrontFooter />
 
     <div class="mouse-cursor cursor-outer"></div>
     <div class="mouse-cursor cursor-inner"></div>
-
-    <livewire:WidgetWa />
 
     <script src="/assets/js/jquery-3.6.2.min.js"></script>
     <script src="/assets/js/isotope.js"></script>

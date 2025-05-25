@@ -6,75 +6,111 @@
                 <div class="text-center max-w-[680px] mx-auto">
                     <p class="text-custom text-[20px] md:text-2xl font-medium font-secondary">Portfolio</p>
                     <h3 class="md:text-[48px] text-[35px] leading-[1.25] mb-[23px] mt-1.5">My Amazing Works</h3>
-                    <p class="text-muted text-lg leading-[30px]">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+                    <p class="text-muted dark:text-darkmuted text-lg leading-[30px]">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
                 </div>
             </div>
-            <div class="text-center wow fadeInLeft" data-wow-duration="1s">
-                <div x-data="{ tab: 'system' }" class="flex w-full min-h-[300px] border rounded-lg overflow-hidden mt-10">
-                    <!-- Sidebar Buttons -->
-                    <div class="w-20 bg-[#00d0be] border-r flex flex-col items-center py-4 space-y-6">
-                        <button @click="tab = 'system'" :class="tab === 'system' ? 'text-blue-600' : 'text-gray-600'" class="hover:text-blue-600">
-                            <i class="fas fa-code text-xl" style="color: white;"></i>
-                        </button>
-                        <button @click="tab = 'uiux'" :class="tab === 'uiux' ? 'text-blue-600' : 'text-gray-600'" class="hover:text-blue-600">
-                            <i class="fas fa-pencil-ruler text-xl" style="color: white;"></i>
-                        </button>
-                        <button @click="tab = 'wordpress'" :class="tab === 'wordpress' ? 'text-blue-600' : 'text-gray-600'" class="hover:text-blue-600">
-                            <i class="fab fa-wordpress text-xl" style="color: white;"></i>
-                        </button>
-                        <button @click="tab = 'ecommerce'" :class="tab === 'ecommerce' ? 'text-blue-600' : 'text-gray-600'" class="hover:text-blue-600">
-                            <i class="fas fa-shopping-cart text-xl" style="color: white;"></i>
-                        </button>
-                        <button @click="tab = 'company'" :class="tab === 'company' ? 'text-blue-600' : 'text-gray-600'" class="hover:text-blue-600">
-                            <i class="fas fa-building text-xl" style="color: white;"></i>
-                        </button>
-                        <button @click="tab = 'graphic'" :class="tab === 'graphic' ? 'text-blue-600' : 'text-gray-600'" class="hover:text-blue-600">
-                            <i class="fas fa-palette text-xl" style="color: white;"></i>
-                        </button>
+            <div class="grid grid-cols-1">
+                <div class="md:pt-[78px] pt-[53px] pb-[46px] md:pb-[56px]">
+                    <ul class="flex items-center gap-4 flex-wrap lg:gap-[50px] justify-center" id="menu-filter">
+                        <li class="shrink-0">
+                            <a href="#" class="hover:text-custom active text-base duration-300" data-filter="*">All</a>
+                        </li>
+                        <li class="shrink-0">
+                            <a href="#" class="hover:text-custom text-base duration-300" data-filter=".youtube">Website System Development</a>
+                        </li>
+                        <li class="shrink-0">
+                            <a href="#" class="hover:text-custom text-base duration-300" data-filter=".vimeo">UI/UX Design</a>
+                        </li>
+                        <li class="shrink-0">
+                            <a href="#" class="hover:text-custom text-base duration-300" data-filter=".soundcloud">WordPress Development</a>
+                        </li>
+                        <li class="shrink-0">
+                            <a href="#" class="hover:text-custom text-base duration-300" data-filter=".popup">E-commerce</a>
+                        </li>
+                        <li class="shrink-0">
+                            <a href="#" class="hover:text-custom text-base duration-300" data-filter=".detail">Company Profile Website</a>
+                        </li>
+                        <li class="shrink-0">
+                            <a href="#" class="hover:text-custom text-base duration-300" data-filter=".detail">Graphic Design</a>
+                        </li>
+                        <li class="shrink-0">
+                            <a href="#" class="hover:text-custom text-base duration-300" data-filter=".detail">Landing Page</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dizme_tm_portfolio_titles"></div>
+            <div class="md:flex work-filter wow fadeInUp" data-wow-duration="1s">
+                <div class="lg:w-1/3 md:w-1/3 p-3 youtube">
+                    <div class="rounded-xl overflow-hidden group relative">
+                        <div class="main-img-box" data-title="Mockup Shape" data-category="Youtube">
+                            <a class="img-zoom relative" href="assets/img/portfolio/1.jpg">
+                                <div class="main group-hover:scale-110 overflow-hidden">
+                                    <img src="assets/img/portfolio/1.jpg" class="object-cover w-full h-full" alt="" />
+                                </div>
+                            </a>
+                        </div>
                     </div>
-
-                    <!-- Content Area -->
-                    <div class="flex-1 p-6 relative">
-                        <!-- Website System -->
-                        <div x-show="tab === 'system'" x-transition.opacity.duration.400ms class="absolute inset-0 p-6" x-cloak>
-                            <h2 class="text-custom text-[20px] md:text-2xl font-medium font-secondary">Website System Development</h2>
-                            <p>Custom-built website systems tailored to your business workflow.</p>
+                </div>
+                <div class="lg:w-1/3 md:w-1/3 p-3 vimeo">
+                    <div class="rounded-xl overflow-hidden group relative">
+                        <div class="main-img-box" data-title="Ave Bottle" data-category="Vimeo">
+                            <a class="img-zoom relative" href="assets/img/portfolio/2.jpg">
+                                <div class="main group-hover:scale-110 overflow-hidden">
+                                    <img src="assets/img/portfolio/4.jpg" class="object-cover w-full h-full" alt="" />
+                                </div>
+                            </a>
                         </div>
-
-                        <!-- UI/UX -->
-                        <div x-show="tab === 'uiux'" x-transition.opacity.duration.400ms class="absolute inset-0 p-6" x-cloak>
-                            <h2 class="text-custom text-[20px] md:text-2xl font-medium font-secondary">UI/UX Design</h2>
-                            <p>User-centered design to improve usability and engagement.</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/3 p-3 soundcloud">
+                    <div class="rounded-xl overflow-hidden group relative">
+                        <div class="main-img-box" data-title="Magic Art" data-category="Soundcloud">
+                            <a class="img-zoom relative" href="assets/img/portfolio/3.jpg">
+                                <div class="main group-hover:scale-110 overflow-hidden">
+                                    <img src="assets/img/portfolio/2.jpg" class="object-cover w-full h-full" alt="" />
+                                </div>
+                            </a>
                         </div>
-
-                        <!-- WordPress -->
-                        <div x-show="tab === 'wordpress'" x-transition.opacity.duration.400ms class="absolute inset-0 p-6" x-cloak>
-                            <h2 class="text-custom text-[20px] md:text-2xl font-medium font-secondary">WordPress Development</h2>
-                            <p>Flexible WordPress websites with themes, plugins, and SEO.</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/3 p-3 popup">
+                    <div class="rounded-xl overflow-hidden group relative">
+                        <div class="main-img-box" data-title="Blue Lemon" data-category="Popup">
+                            <a class="img-zoom relative" href="assets/img/portfolio/4.jpg">
+                                <div class="main group-hover:scale-110 overflow-hidden">
+                                    <img src="assets/img/portfolio/5.jpg" class="object-cover w-full h-full" alt="" />
+                                </div>
+                            </a>
                         </div>
-
-                        <!-- E-commerce -->
-                        <div x-show="tab === 'ecommerce'" x-transition.opacity.duration.400ms class="absolute inset-0 p-6" x-cloak>
-                            <h2 class="text-custom text-[20px] md:text-2xl font-medium font-secondary">E-commerce</h2>
-                            <p>Online store development with secure payment integration.</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/3 p-3 detail">
+                    <div class="rounded-xl overflow-hidden group relative">
+                        <div class="main-img-box" data-title="Art Stone" data-category="Popup">
+                            <a class="img-zoom relative" href="assets/img/portfolio/5.jpg">
+                                <div class="main group-hover:scale-110 overflow-hidden">
+                                    <img src="assets/img/portfolio/3.jpg" class="object-cover w-full h-full" alt="" />
+                                </div>
+                            </a>
                         </div>
-
-                        <!-- Company Profile -->
-                        <div x-show="tab === 'company'" x-transition.opacity.duration.400ms class="absolute inset-0 p-6" x-cloak>
-                            <h2 class="text-custom text-[20px] md:text-2xl font-medium font-secondary">Company Profile Website</h2>
-                            <p>Professional company profile websites to boost credibility.</p>
-                        </div>
-
-                        <!-- Graphic Design -->
-                        <div x-show="tab === 'graphic'" x-transition.opacity.duration.400ms class="absolute inset-0 p-6" x-cloak>
-                            <h2 class="text-custom text-[20px] md:text-2xl font-medium font-secondary">Graphic Design</h2>
-                            <p>Logos, brochures, social media designs & more.</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/3 p-3 youtube">
+                    <div class="rounded-xl overflow-hidden group relative">
+                        <div class="main-img-box" data-title="Global Evolution" data-category="Detail">
+                            <a class="img-zoom relative" href="assets/img/portfolio/6.jpg">
+                                <div class="main group-hover:scale-110 overflow-hidden">
+                                    <img src="assets/img/portfolio/6.jpg" class="object-cover w-full h-full" alt="" />
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+        <div class="left-[50px] top-[150px] absolute hidden lg:block wow zoomIn" data-wow-duration="1s"><img src="assets/img/brushes/portfolio/1.png" alt="" /></div>
+        <div class="right-[10px] bottom-[51px] absolute hidden lg:block wow fadeInRight" data-wow-duration="1s"><img src="assets/img/brushes/portfolio/2.png" alt="" /></div>
     </section>
     <!-- End Portfolio -->
 </div>

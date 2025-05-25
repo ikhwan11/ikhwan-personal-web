@@ -1,7 +1,8 @@
 <div>
     <!-- Start Home -->
-    <section class="bg-[url('../img/slider/1.jpg')] flex items-center bg-center bg-cover lg:h-screen py-24 relative dizme_tm_header" id="home">
-        <div class="container">
+    <section class="bg-[url('../img/slider/1.jpg')] flex items-center bg-center bg-cover lg:min-h-[600px] py-24 relative dizme_tm_header" id="home">
+
+        <div class="container px-4 lg:px-8">
             <div class="grid lg:grid-cols-2 items-center gap-[25px]">
                 <div class="order-2 lg:order-1">
                     <h3 class="text-custom text-[21px] text-center lg:text-left lg:text-[25px] xl:text-[45px] leading-[1.3] font-medium font-secondary">Hello, I'm</h3>
@@ -46,29 +47,12 @@
                 </div>
             </div>
         </div>
-        <div class="dizme_tm_down text-center max-[1024px]:!bottom-6">
-            <a class="anchor inline-block" href="#process">
-                <svg
-                    width="26px"
-                    height="100%"
-                    viewBox="0 0 247 390"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    style="fill-rule: evenodd; clip-rule: evenodd; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5;">
-                    <path id="wheel" d="M123.359,79.775l0,72.843" fill="none" class="stroke-[20px] stroke-dark " />
-                    <path
-                        id="mouse"
-                        fill="none"
-                        d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
-                        class="stroke-[20px] stroke-dark " />
-                </svg>
-            </a>
-        </div>
+
     </section>
     <!-- End Home -->
 
     <livewire:FrontProcessSection />
+    <livewire:FrontProductSection />
     <livewire:FrontAboutSection />
     <livewire:FrontPortfolioSection />
     <livewire:FrontSkillSection />

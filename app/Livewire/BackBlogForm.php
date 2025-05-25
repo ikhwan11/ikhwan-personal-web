@@ -5,11 +5,12 @@ namespace App\Livewire;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-class Blog extends Component
+class BackBlogForm extends Component
 {
-    #[Title('ODS | Blogs')]
+    #[Title('Blog Page')]
+
     public function render()
     {
-        return view('livewire.blog');
+        return view('livewire.back-end.blog.back-blog-form');
     }
 }

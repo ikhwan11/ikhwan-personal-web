@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
 /*
 ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
@@ -228,7 +227,7 @@ button,
 [type="submit"] {
     -webkit-appearance: button;
     /* 1 */
-    background-color: transparent;
+    /* background-color: transparent; */
     /* 2 */
     background-image: none;
     /* 2 */

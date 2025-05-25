@@ -28,6 +28,9 @@
                                 <li class="about">
                                     <a href="{{ $isHome ? '#about' : '/#about' }}" class="font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">About</a>
                                 </li>
+                                <!-- <li class="product">
+                                    <a href="{{ $isHome ? '#product' : '/#product' }}" class="font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Product</a>
+                                </li> -->
                                 <li class="portfolio">
                                     <a href="{{ $isHome ? '#portfolio' : '/#portfolio' }}" class="font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Portfolio</a>
                                 </li>
@@ -46,17 +49,38 @@
                     </div>
                 </div>
                 <div class="hidden mobile-menu md:hidden">
+                    @php
+                    $isHome = request()->is('/');
+                    @endphp
+
                     <div class="pt-5">
-                        <ul>
-                            <li class="home"><a href="/" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Home</a></li>
-                            <li class="about"><a href="#about" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">About</a></li>
-                            <li class="portfolio"><a href="#portfolio" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Portfolio</a></li>
-                            <li class="service"><a href="#service" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Service</a></li>
-                            <li class="blog"><a href="#blog" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Blog</a></li>
-                            <li class="contact"><a href="#contact" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Contact</a></li>
-                            <a href="#" class="mt-[20px] btn-outline-custom relative text-sm px-3 py-1.5 rounded-sm border border-gray-300 hover:bg-gray-100 transition">
-                                Download CV
-                            </a>
+                        <ul class="flex flex-col gap-2">
+                            <li class="home">
+                                <a href="{{ $isHome ? '#home' : '/' }}" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Home</a>
+                            </li>
+                            <li class="about">
+                                <a href="{{ $isHome ? '#about' : '/#about' }}" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">About</a>
+                            </li>
+                            <!-- <li class="product">
+                                <a href="{{ $isHome ? '#product' : '/#product' }}" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Product</a>
+                            </li> -->
+                            <li class="portfolio">
+                                <a href="{{ $isHome ? '#portfolio' : '/#portfolio' }}" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Portfolio</a>
+                            </li>
+                            <li class="service">
+                                <a href="{{ $isHome ? '#service' : '/#service' }}" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Service</a>
+                            </li>
+                            <li class="blog">
+                                <a href="{{ $isHome ? '#blog' : '/#blog' }}" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Blog</a>
+                            </li>
+                            <li class="contact">
+                                <a href="{{ $isHome ? '#contact' : '/#contact' }}" class="text-base font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#" class="mt-[10px] btn-outline-custom relative text-sm px-3 py-1.5 rounded-sm border border-gray-300 hover:bg-gray-100 transition inline-block w-fit">
+                                    Download CV
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

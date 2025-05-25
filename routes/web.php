@@ -1,5 +1,9 @@
 <?php
 
+use App\Livewire\BackAboutForm;
+use App\Livewire\BackAdminSidebar;
+use App\Livewire\BackBlogForm;
+use App\Livewire\BackLoginForm;
 use App\Livewire\Blog;
 use App\Livewire\BlogList;
 use App\Livewire\BlogSingle;
@@ -8,6 +12,7 @@ use App\Livewire\FrontFooter;
 use App\Livewire\FrontHeader;
 use App\Livewire\FrontPortfolioSection;
 use App\Livewire\FrontProcessSection;
+use App\Livewire\FrontProductSection;
 use App\Livewire\FrontServiceSection;
 use App\Livewire\FrontSkillSection;
 use App\Livewire\Home;
@@ -20,6 +25,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', Home::class);
 Route::get('/Blog', Blog::class);
 Route::get('/Blog-single', BlogSingle::class);
+// Admin Route
+Route::get('/Admin-login', BackLoginForm::class);
+Route::get('/Admin-blog-form', BackBlogForm::class);
+Route::get('/Admin-about-form', BackAboutForm::class);
 
 // Livewire Section
 Route::get('/frontHeader', FrontHeader::class);
@@ -33,6 +42,9 @@ Route::get('/frontTestimonialSection', FrontServiceSection::class);
 Route::get('/frontPartnerSection', FrontServiceSection::class);
 Route::get('/frontBlogSection', FrontServiceSection::class);
 Route::get('/frontContactSection', FrontServiceSection::class);
+Route::get('/frontProductSection', FrontProductSection::class);
+// Admin Section
+Route::get('/BackAdminSidebar', BackAdminSidebar::class);
 
 // Blog
 Route::get('/BlogList', BlogList::class);
