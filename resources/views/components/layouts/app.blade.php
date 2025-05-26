@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="/assets/css/float-btn.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-
 </head>
 
 <body class="antialiased text-base leading-relaxed font-primary text-dark">
@@ -51,6 +50,15 @@
     <script src="/assets/js/tilt.jquery.js"></script>
     <script src="/assets/js/wow.min.js"></script>
     <script src="/assets/js/custom.js"></script>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
     @livewireScripts
 </body>
 

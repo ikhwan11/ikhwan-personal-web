@@ -16,6 +16,8 @@ use App\Livewire\FrontProductSection;
 use App\Livewire\FrontServiceSection;
 use App\Livewire\FrontSkillSection;
 use App\Livewire\Home;
+use App\Livewire\InputMultipleImage;
+use App\Livewire\TitleBlogInput;
 use App\Livewire\WidgetPagination;
 use App\Livewire\WidgetSocmed;
 use App\Livewire\WidgetWa;
@@ -48,6 +50,8 @@ Route::get('/BackAdminSidebar', BackAdminSidebar::class);
 
 // Blog
 Route::get('/BlogList', BlogList::class);
+Route::get('/TitleBlogInput', TitleBlogInput::class);
+Route::get('/InputMultipleImage', InputMultipleImage::class);
 
 // Livwire Widget
 Route::get('/WidgetSocmed', WidgetSocmed::class);

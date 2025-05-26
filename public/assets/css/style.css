@@ -2783,3 +2783,26 @@ h6 {
         font-size: 23px;
     }
 }
+
+.ck-editor__editable ol,
+.ck-editor__editable ul {
+    padding-left: 1.5em; /* buat ruang indentasi list */
+    margin-left: 0; /* hilangkan margin default browser */
+    list-style-position: outside; /* posisi nomor/dot di luar teks */
+}
+
+.ck-editor__editable ol {
+    list-style-type: decimal;
+}
+
+.ck-editor__editable ul {
+    list-style-type: disc;
+}
+
+/* Jika kamu ingin teks list agak ke tengah (lebih ke kanan),
+   bisa tambahkan padding-left lebih besar */
+
+.ck-editor__editable ol li,
+.ck-editor__editable ul li {
+    padding-left: 0.5em; /* spasi antara nomor/dot dan teks */
+}
