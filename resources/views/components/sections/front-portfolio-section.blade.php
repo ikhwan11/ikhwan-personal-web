@@ -16,7 +16,7 @@
                             <a href="#" class="hover:text-custom active text-base duration-300" data-filter="*">All</a>
                         </li>
                         <li class="shrink-0">
-                            <a href="#" class="hover:text-custom text-base duration-300" data-filter=".youtube">Website System Development</a>
+                            <a href="#" class="hover:text-custom text-base duration-300" data-filter=".youtube">Web System</a>
                         </li>
                         <li class="shrink-0">
                             <a href="#" class="hover:text-custom text-base duration-300" data-filter=".vimeo">UI/UX Design</a>
@@ -28,7 +28,7 @@
                             <a href="#" class="hover:text-custom text-base duration-300" data-filter=".popup">E-commerce</a>
                         </li>
                         <li class="shrink-0">
-                            <a href="#" class="hover:text-custom text-base duration-300" data-filter=".detail">Company Profile Website</a>
+                            <a href="#" class="hover:text-custom text-base duration-300" data-filter=".detail">Comppro Website</a>
                         </li>
                         <li class="shrink-0">
                             <a href="#" class="hover:text-custom text-base duration-300" data-filter=".detail">Graphic Design</a>

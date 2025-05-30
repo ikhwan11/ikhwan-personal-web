@@ -3,7 +3,9 @@
 use App\Livewire\BackAboutForm;
 use App\Livewire\BackAdminSidebar;
 use App\Livewire\BackBlogForm;
+use App\Livewire\BackCurriculumForm;
 use App\Livewire\BackLoginForm;
+use App\Livewire\BackServiceForm;
 use App\Livewire\Blog;
 use App\Livewire\BlogList;
 use App\Livewire\BlogSingle;
@@ -31,6 +33,8 @@ Route::get('/Blog-single', BlogSingle::class);
 Route::get('/Admin-login', BackLoginForm::class);
 Route::get('/Admin-blog-form', BackBlogForm::class);
 Route::get('/Admin-about-form', BackAboutForm::class);
+Route::get('/Admin-service-form', BackServiceForm::class);
+Route::get('/Admin-curriculum-form', BackCurriculumForm::class);
 
 // Livewire Section
 Route::get('/frontHeader', FrontHeader::class);
@@ -52,6 +56,8 @@ Route::get('/BackAdminSidebar', BackAdminSidebar::class);
 Route::get('/BlogList', BlogList::class);
 Route::get('/TitleBlogInput', TitleBlogInput::class);
 Route::get('/InputMultipleImage', InputMultipleImage::class);
+
+// cv
 
 // Livwire Widget
 Route::get('/WidgetSocmed', WidgetSocmed::class);

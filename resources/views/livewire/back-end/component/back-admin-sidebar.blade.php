@@ -17,22 +17,24 @@
                 <i class="fas fa-info-circle w-5 text-center"></i>
                 <span>About</span>
             </a>
+
+            <a href="/Admin-service-form" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
+                <i class="fas fa-concierge-bell w-5 text-center"></i>
+                <span>Services</span>
+            </a>
+            <a href="/Admin-curriculum-form" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
+                <i class="fas fa-file-alt w-5 text-center"></i>
+                <span>Curriculum Vitae</span>
+            </a>
             <a href="#" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
                 <i class="fas fa-box w-5 text-center"></i>
                 <span>Products</span>
             </a>
             <a href="#" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
-                <i class="fas fa-concierge-bell w-5 text-center"></i>
-                <span>Services</span>
-            </a>
-            <a href="#" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
                 <i class="fas fa-lightbulb w-5 text-center"></i>
                 <span>Skill</span>
             </a>
-            <a href="#" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
-                <i class="fas fa-file-alt w-5 text-center"></i>
-                <span>Curriculum Vitae</span>
-            </a>
+
             <a href="#" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
                 <i class="fas fa-briefcase w-5 text-center"></i>
                 <span>Portfolio</span>

@@ -14,7 +14,7 @@
                         I help businesses grow online by building fast, responsive websites and impactful brand designs. I build modern and functional websites using Laravel, Livewire, React, and Tailwind CSS. I also help brands stand out with unique logos, product packaging, and digital designs. Let's build something great together.
                     </p>
                     <div class="flex items-center justify-center lg:justify-start gap-[25px]">
-                        <a href="#about" class="btn-custom relative">About Me</a>
+                        <a href="#about" class="btn-custom relative">Get to know me</a>
                         <ul class="flex items-center gap-2">
                             <li>
                                 <a href="#"><i class="icon-facebook-1"></i></a>

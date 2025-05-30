@@ -11,7 +11,7 @@
 
                     <a href="#"
                         class="bg-[#304dd0] hover:bg-[#6030d0] text-white px-4 py-2 rounded inline-block">
-                        Blog Lists
+                        Blogs List
                     </a>
                 </div>
 
