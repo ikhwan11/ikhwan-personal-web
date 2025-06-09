@@ -17,11 +17,11 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory()->create([
-            'name' => 'Nigga',
-            'about_user' => 'asdasd',
-            'username' => 'asdasd',
+            'name' => 'Angelina Jolie',
+            'about_user' => 'admin asdasddasd',
+            'username' => 'admin',
             'password' => Hash::make('123123'),
-            'image' => 'users/DrWEZyCYr3ntlL663HNlCu4yqScodSPKVPyF3RQ6.jpg',
+            'image' => 'users/wOeGYXChJS9WOEqRsvCNjzTSFXCBRmCJaUXIpYXP.jpg',
         ]);
     }
 }
