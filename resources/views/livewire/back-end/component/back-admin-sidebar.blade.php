@@ -43,7 +43,7 @@
                 <i class="fas fa-address-book w-5 text-center"></i>
                 <span>Leads Management</span>
             </a>
-            <a href="#" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
+            <a href="/Admin-user-form" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
                 <i class="fas fa-users w-5 text-center"></i>
                 <span>Users</span>
             </a>
