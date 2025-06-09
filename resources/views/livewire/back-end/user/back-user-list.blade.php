@@ -18,6 +18,14 @@
 
                 <div class="bg-white p-6 rounded-lg shadow-md space-y-4">
 
+                    @if (session()->has('success'))
+                        <div x-data="{ show: true }" x-init="setTimeout(() => show = false, 3000)" x-show="show" x-transition
+                            class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+
                     <div class="overflow-x-auto">
                         <table class="min-w-full divide-y divide-gray-200 border border-gray-300 rounded-md">
                             <thead class="bg-gray-100">
@@ -40,10 +48,13 @@
                                         <td class="px-6 py-4 text-sm text-gray-800">{{ $user->name }}</td>
                                         <td class="px-6 py-4 text-sm text-gray-800">{{ $user->username }}</td>
                                         <td class="px-6 py-4 text-sm text-gray-800 space-x-2">
-                                            <button
-                                                class="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 text-xs">Edit</button>
+                                            <a href="{{ route('user.edit', $user->id) }}"
+                                                class="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 text-xs">Edit</a>
                                             <button
                                                 class="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 text-xs">Delete</button>
+                                            <button
+                                                class="px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600 text-xs">Change
+                                                Password</button>
                                         </td>
                                     </tr>
                                 @empty

@@ -15,12 +15,6 @@
                     </a>
                 </div>
 
-                @if (session()->has('success'))
-                    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative">
-                        {{ session('success') }}
-                    </div>
-                @endif
-
                 <form wire:submit.prevent="saveUser" enctype="multipart/form-data"
                     class="bg-white p-6 rounded-lg shadow-md space-y-4" autocomplete="off">
 
@@ -31,8 +25,16 @@
 
                             <!-- Preview Image dari Livewire -->
                             @if ($image)
-                                <img src="{{ $image->temporaryUrl() }}" alt="Preview"
-                                    class="w-40 h-40 object-cover rounded-md border border-gray-300" />
+                                <img src="{{ $image->temporaryUrl() }}"
+                                    class="w-32 h-32 object-cover rounded-md border border-gray-300" />
+                            @elseif ($oldImage)
+                                <img src="{{ asset('storage/' . $oldImage) }}"
+                                    class="w-32 h-32 object-cover rounded-md border border-gray-300" />
+                            @else
+                                <div
+                                    class="w-32 h-32 flex items-center justify-center bg-gray-100 border border-gray-300 rounded-md text-gray-400 text-sm">
+                                    No Image
+                                </div>
                             @endif
 
                             <!-- Input File -->
@@ -90,34 +92,35 @@
                                 <p class="text-sm text-red-600 mt-1">{{ $message }}</p>
                             @enderror
 
-                            <div class="relative">
-                                <input type="password" id="password" name="password" wire:model="password"
-                                    autocomplete="new-password"
-                                    class="mt-1 w-full px-4 py-2 pr-10 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-                                    placeholder="Password">
+                            @unless ($userId)
+                                <div class="relative">
+                                    <input type="password" id="password" name="password" wire:model="password"
+                                        autocomplete="new-password"
+                                        class="mt-1 w-full px-4 py-2 pr-10 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                                        placeholder="Password">
 
-                                @error('password')
-                                    <p class="text-sm text-red-600 mt-1">{{ $message }}</p>
-                                @enderror
+                                    @error('password')
+                                        <p class="text-sm text-red-600 mt-1">{{ $message }}</p>
+                                    @enderror
 
-                                <button type="button" id="togglePassword"
-                                    class="absolute inset-y-0 right-2 flex items-center text-gray-500">
-                                    <svg id="eyeClosed" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                                    </svg>
+                                    <button type="button" id="togglePassword"
+                                        class="absolute inset-y-0 right-2 flex items-center text-gray-500">
+                                        <svg id="eyeClosed" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                        </svg>
 
-                                    <svg id="eyeOpen" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.542-7a9.965 9.965 0 012.224-3.592M6.042 6.042A9.956 9.956 0 0112 5c4.478 0 8.268 2.943 9.542 7a9.96 9.96 0 01-1.67 2.74M15 12a3 3 0 00-3-3M3 3l18 18" />
-                                    </svg>
-                                </button>
-                            </div>
-
+                                        <svg id="eyeOpen" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden"
+                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.542-7a9.965 9.965 0 012.224-3.592M6.042 6.042A9.956 9.956 0 0112 5c4.478 0 8.268 2.943 9.542 7a9.96 9.96 0 01-1.67 2.74M15 12a3 3 0 00-3-3M3 3l18 18" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            @endunless
                         </div>
                     </div>
 

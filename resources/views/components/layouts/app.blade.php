@@ -28,10 +28,10 @@
         <div class="loader_line"></div>
     </div> -->
 
-    @if (!Str::contains(Request::path(), 'Admin'))
-    <livewire:FrontHeader />
-    <livewire:WidgetSocmed />
-    <livewire:WidgetWa />
+    @if (!Str::contains(Request::path(), 'dmin'))
+        <livewire:FrontHeader />
+        <livewire:WidgetSocmed />
+        <livewire:WidgetWa />
     @endif
 
     {{ $slot }}
