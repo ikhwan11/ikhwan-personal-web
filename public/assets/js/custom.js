@@ -23,7 +23,12 @@ $(".main-img-box").each(function () {
     $(this)
         .on("mouseenter", function () {
             if ($(this).data("title")) {
-                $(".dizme_tm_portfolio_titles").html($(this).data("title") + '<span class="work__cat">' + $(this).data("category") + "</span>");
+                $(".dizme_tm_portfolio_titles").html(
+                    $(this).data("title") +
+                        '<span class="work__cat">' +
+                        $(this).data("category") +
+                        "</span>",
+                );
                 $(".dizme_tm_portfolio_titles").addClass("visible");
             }
             $(document).on("mousemove", function (e) {
@@ -114,13 +119,23 @@ if (myCursor.length) {
             i = 0,
             o = !1;
         (window.onmousemove = function (s) {
-            o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), (e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), (n = s.clientY), (i = s.clientX);
+            o ||
+                (t.style.transform =
+                    "translate(" + s.clientX + "px, " + s.clientY + "px)"),
+                (e.style.transform =
+                    "translate(" + s.clientX + "px, " + s.clientY + "px)"),
+                (n = s.clientY),
+                (i = s.clientX);
         }),
             $("body").on("mouseenter", "a, .cursor-pointer", function () {
-                e.classList.add("cursor-hover"), t.classList.add("cursor-hover");
+                e.classList.add("cursor-hover"),
+                    t.classList.add("cursor-hover");
             }),
             $("body").on("mouseleave", "a, .cursor-pointer", function () {
-                ($(this).is("a") && $(this).closest(".cursor-pointer").length) || (e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover"));
+                ($(this).is("a") &&
+                    $(this).closest(".cursor-pointer").length) ||
+                    (e.classList.remove("cursor-hover"),
+                    t.classList.remove("cursor-hover"));
             }),
             (e.style.visibility = "visible"),
             (t.style.visibility = "visible");
@@ -140,7 +155,11 @@ $(".img-zoom").magnificPopup({
 });
 
 // preloader
-var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(
+    navigator.userAgent,
+)
+    ? true
+    : false;
 var preloader = $("#preloader");
 
 if (!isMobile) {

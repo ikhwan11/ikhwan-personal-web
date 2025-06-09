@@ -22,34 +22,18 @@
                 <i class="fas fa-concierge-bell w-5 text-center"></i>
                 <span>Services</span>
             </a>
-            <a href="/Admin-curriculum-form" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
+            <a href="/Admin-curriculum-form"
+                class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
                 <i class="fas fa-file-alt w-5 text-center"></i>
                 <span>Curriculum Vitae</span>
             </a>
-            <a href="#" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
+            <!-- <a href="#" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
                 <i class="fas fa-box w-5 text-center"></i>
                 <span>Products</span>
-            </a>
-            <a href="#" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
-                <i class="fas fa-lightbulb w-5 text-center"></i>
-                <span>Skill</span>
-            </a>
-
-            <a href="#" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
+            </a> -->
+            <a href="/Admin-portfolio-form" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
                 <i class="fas fa-briefcase w-5 text-center"></i>
                 <span>Portfolio</span>
-            </a>
-            <a href="#" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
-                <i class="fas fa-handshake w-5 text-center"></i>
-                <span>partners</span>
-            </a>
-            <a href="#" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
-                <i class="fas fa-comment-dots w-5 text-center"></i>
-                <span>Testimonials</span>
-            </a>
-            <a href="#" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
-                <i class="fas fa-envelope w-5 text-center"></i>
-                <span>Contact</span>
             </a>
             <a href="#" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
                 <i class="fas fa-bullhorn w-5 text-center"></i>

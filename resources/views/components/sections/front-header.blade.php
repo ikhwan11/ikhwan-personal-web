@@ -43,6 +43,11 @@
                                 <li class="contact">
                                     <a href="{{ $isHome ? '#contact' : '/#contact' }}" class="font-medium hover:text-custom font-secondary ease-in-out duration-300 inline-block leading-6 p-2">Contact</a>
                                 </li>
+                                <li>
+                                <a href="#" class="mt-[10px] btn-outline-custom relative text-sm px-3 py-1.5 rounded-sm border border-gray-300 hover:bg-gray-100 transition inline-block w-fit">
+                                    My CV 
+                                </a>
+                            </li>
                             </ul>
 
                         </div>
@@ -78,7 +83,7 @@
                             </li>
                             <li>
                                 <a href="#" class="mt-[10px] btn-outline-custom relative text-sm px-3 py-1.5 rounded-sm border border-gray-300 hover:bg-gray-100 transition inline-block w-fit">
-                                    Download CV
+                                    Curriculum Vitae
                                 </a>
                             </li>
                         </ul>

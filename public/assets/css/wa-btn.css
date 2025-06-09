@@ -14,7 +14,10 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: left 0.4s ease, width 0.4s ease, padding 0.4s ease;
+    transition:
+        left 0.4s ease,
+        width 0.4s ease,
+        padding 0.4s ease;
     width: 50px; /* awal kecil */
     overflow: hidden;
     z-index: 100;
