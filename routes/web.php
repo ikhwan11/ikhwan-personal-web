@@ -6,6 +6,7 @@ use App\Livewire\BackBlogForm;
 use App\Livewire\BackCurriculumForm;
 use App\Livewire\BackPortfolioForm;
 use App\Livewire\BackUserForm;
+use App\Livewire\BackUserList;
 use App\Livewire\BackLoginForm;
 use App\Livewire\BackServiceForm;
 use App\Livewire\Blog;
@@ -38,7 +39,11 @@ Route::get('/Admin-about-form', BackAboutForm::class);
 Route::get('/Admin-service-form', BackServiceForm::class);
 Route::get('/Admin-curriculum-form', BackCurriculumForm::class);
 Route::get('/Admin-portfolio-form', BackPortfolioForm::class);
+
+// Admin Route  // ---- user
 Route::get('/Admin-user-form', BackUserForm::class);
+Route::get('/Admin-user-list', BackUserList::class);
+Route::get('/admin/user/create', BackUserForm::class)->name('user.create');
 
 // Livewire Section
 Route::get('/frontHeader', FrontHeader::class);
