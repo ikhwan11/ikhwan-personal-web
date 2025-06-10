@@ -9,7 +9,7 @@
                         <strong>Tambah User</strong>
                     </h1>
 
-                    <a href="/Admin-user-list"
+                    <a href="/admin/user/list"
                         class="bg-[#304dd0] hover:bg-[#6030d0] text-white px-4 py-2 rounded inline-block">
                         User List
                     </a>
@@ -64,7 +64,14 @@
                                 class="mt-1 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                                 placeholder="Name">
 
+                            <input type="text" id="slug" name="slug" wire:model="slug"
+                                class="mt-1 w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                                placeholder="Slug (otomatis)" hidden>
+
                             @error('name')
+                                <p class="text-sm text-red-600 mt-1">{{ $message }}</p>
+                            @enderror
+                            @error('slug')
                                 <p class="text-sm text-red-600 mt-1">{{ $message }}</p>
                             @enderror
                         </div>
@@ -133,6 +140,7 @@
             </main>
         </div>
     </section>
+
     <script>
         const passwordInput = document.getElementById('password');
         const togglePassword = document.getElementById('togglePassword');
@@ -146,5 +154,6 @@
             eyeClosed.classList.toggle('hidden', isHidden);
         });
     </script>
+
 
 </div>

@@ -10,10 +10,11 @@
                         <strong>User List</strong>
                     </h1>
 
-                    <a href="/Admin-user-form"
+                    <a href="/admin/user/create"
                         class="bg-[#f1a839] hover:bg-[#f17339] text-white px-4 py-2 rounded inline-block">
-                        Back
+                        Add New User
                     </a>
+
                 </div>
 
                 <div class="bg-white p-6 rounded-lg shadow-md space-y-4">
@@ -48,10 +49,12 @@
                                         <td class="px-6 py-4 text-sm text-gray-800">{{ $user->name }}</td>
                                         <td class="px-6 py-4 text-sm text-gray-800">{{ $user->username }}</td>
                                         <td class="px-6 py-4 text-sm text-gray-800 space-x-2">
-                                            <a href="{{ route('user.edit', $user->id) }}"
+                                            <a href="{{ route('user.edit', $user->slug) }}"
                                                 class="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 text-xs">Edit</a>
-                                            <button
-                                                class="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 text-xs">Delete</button>
+                                            <button onclick="confirmDelete('{{ $user->slug }}')"
+                                                class="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 text-xs">
+                                                Hapus
+                                            </button>
                                             <button
                                                 class="px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600 text-xs">Change
                                                 Password</button>
@@ -65,12 +68,28 @@
                                 @endforelse
                             </tbody>
                         </table>
+                        <script>
+                            function confirmDelete(slug) {
+                                Swal.fire({
+                                    title: 'Yakin ingin menghapus?',
+                                    text: "Data tidak bisa dikembalikan!",
+                                    icon: 'warning',
+                                    showCancelButton: true,
+                                    confirmButtonColor: '#d33',
+                                    cancelButtonColor: '#3085d6',
+                                    confirmButtonText: 'Ya, hapus!',
+                                }).then((result) => {
+                                    if (result.isConfirmed) {
+                                        Livewire.dispatch('deleteUser', {
+                                            slug
+                                        }); // ✅ Ganti emit dengan dispatch
+                                    }
+                                });
+                            }
+                        </script>
                     </div>
-
-
                 </div>
             </main>
-
         </div>
     </section>
 </div>

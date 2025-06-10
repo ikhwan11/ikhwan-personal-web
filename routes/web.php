@@ -41,10 +41,9 @@ Route::get('/Admin-curriculum-form', BackCurriculumForm::class);
 Route::get('/Admin-portfolio-form', BackPortfolioForm::class);
 
 // Admin Route  // ---- user
-Route::get('/Admin-user-form', BackUserForm::class);
-Route::get('/Admin-user-list', BackUserList::class);
+Route::get('/admin/user/list', BackUserList::class);
 Route::get('/admin/user/create', BackUserForm::class)->name('user.create');
-Route::get('/admin/user/{id}/edit', BackUserForm::class)->name('user.edit');
+Route::get('/admin/user/{user:slug}/edit', BackUserForm::class)->name('user.edit');
 
 
 // Livewire Section

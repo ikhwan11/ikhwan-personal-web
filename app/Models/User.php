@@ -17,13 +17,19 @@ class User extends Authenticatable
      *
      * @var list<string>
      */
-    protected $fillable = ['name', 'about_user', 'username', 'password', 'image'];
+    protected $fillable = ['name', 'about_user', 'username', 'password', 'image', 'slug'];
 
     /**
      * The attributes that should be hidden for serialization.
      *
      * @var list<string>
      */
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
     protected $hidden = [
         'password',
         'remember_token',

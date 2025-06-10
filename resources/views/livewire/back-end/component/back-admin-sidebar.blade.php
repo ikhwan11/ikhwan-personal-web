@@ -43,10 +43,27 @@
                 <i class="fas fa-address-book w-5 text-center"></i>
                 <span>Leads Management</span>
             </a>
-            <a href="/Admin-user-form" class="flex items-center gap-3 p-2 rounded hover:bg-blue-100 text-gray-700">
-                <i class="fas fa-users w-5 text-center"></i>
+
+            <a href="#" id="userCollapseTrigger"
+                class="flex items-center gap-3 p-2 hover:bg-blue-100 text-gray-700 text-sm font-medium rounded ">
+                <i class="fas fa-users "></i>
                 <span>Users</span>
+                <svg class="w-4 h-4 transition-transform" id="chevronIcon" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
             </a>
+
+            <!-- Collapsible content -->
+            <div id="userCollapseContent" class="mt-2 hidden">
+                <div class="bg-blue-100 rounded shadow p-4 space-y-2">
+                    <a href="/admin/user/create" class="block text-sm text-gray-700 hover:text-blue-600"><i
+                            class="fas fa-user-plus w-4 text-center"></i>&nbsp;&nbsp;&nbsp;Add User</a>
+                    <a href="/admin/user/list" class="block text-sm text-gray-700 hover:text-blue-600"><i
+                            class="fas fa-list w-4 text-center"></i>&nbsp;&nbsp;&nbsp;User List</a>
+                </div>
+            </div>
+
             <a href="/" class="flex items-center gap-3 p-2 mt-4 text-red-500 hover:bg-red-100 rounded">
                 <i class="fas fa-sign-out-alt w-5 text-center"></i>
                 <span>Logout</span>
@@ -54,5 +71,20 @@
         </nav>
 
     </aside>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const trigger = document.getElementById("userCollapseTrigger");
+            const content = document.getElementById("userCollapseContent");
+            const icon = document.getElementById("chevronIcon");
+
+            trigger.addEventListener("click", (e) => {
+                e.preventDefault();
+                content.classList.toggle("hidden");
+
+                // Optional: Rotate icon on open
+                icon.classList.toggle("rotate-180");
+            });
+        });
+    </script>
 
 </div>
